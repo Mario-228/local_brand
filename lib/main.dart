@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:local_brand/core/utils/app_theme/app_theme.dart';
 import 'package:local_brand/features/home_feature/presentation/home_feature_view.dart';
 
 void main() {
@@ -11,10 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Local Brand',
-      theme: ThemeData(
-        colorScheme:ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const HomeFeatureView(),
+      theme: AppTheme.light,
+      themeMode: ThemeMode.system,
+      darkTheme: AppTheme.dark,
+    home: const HomeFeatureView(),
     );
   }
 }
