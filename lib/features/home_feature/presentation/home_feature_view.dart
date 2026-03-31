@@ -6,6 +6,7 @@ class HomeFeatureView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // final colors =Theme.of(context).extension<AppThemeColors>()!.colors; //for creating object color theme
     return  Scaffold(
       appBar: AppBar(),
       body: HomeFeatureViewBody(),
