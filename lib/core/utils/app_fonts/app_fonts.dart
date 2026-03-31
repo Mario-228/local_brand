@@ -56,7 +56,7 @@ abstract class AppFonts {
     fontFamily: "Inter",
     fontWeight: FontWeight.w500,
   );
-  static const TextStyle textStylePrimaryButtonSemiBold16 = TextStyle(
+  static const TextStyle textStyleMaterialButtonSemiBold16 = TextStyle(
     fontSize: 16,
     fontFamily: "Inter",
     fontWeight: FontWeight.w600,
