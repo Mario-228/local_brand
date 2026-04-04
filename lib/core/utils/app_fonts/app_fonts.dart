@@ -1,69 +1,117 @@
 import 'package:flutter/material.dart';
+import 'package:local_brand/core/utils/app_colors/app_colors.dart';
+import 'package:local_brand/core/utils/app_theme/app_theme_colors.dart';
 
 abstract class AppFonts {
-  static const TextStyle textStyleHeaderBold40 = TextStyle(
+  static AppColors getColorObject(BuildContext context) {
+    return Theme.of(context).extension<AppThemeColors>()!.colors;
+  }
+
+  static TextStyle textStyleLoginScreenHeaderBold32Blue(BuildContext context) =>
+      TextStyle(
+        fontSize: 32,
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w700,
+        color: getColorObject(context).primary,
+      );
+
+  static TextStyle textStyleHeaderBold40(BuildContext context) => TextStyle(
     fontSize: 40,
     fontFamily: "Inter",
     fontWeight: FontWeight.w700,
+    color: getColorObject(context).onSurface,
   );
-  static const TextStyle textStyleTitleBold48 = TextStyle(
+
+  static TextStyle textStyleTitleBold48(BuildContext context) => TextStyle(
     fontSize: 48,
     fontFamily: "Inter",
     fontWeight: FontWeight.w700,
+    color: getColorObject(context).onSurface,
   );
-  static const TextStyle textStyleAppBarBold24 = TextStyle(
+
+  static TextStyle textStyleAppBarBold24(BuildContext context) => TextStyle(
     fontSize: 24,
     fontFamily: "Inter",
     fontWeight: FontWeight.w700,
+    color: getColorObject(context).onSurface,
   );
-  static const TextStyle textStyleItemDescriptionTextRegular14 = TextStyle(
+
+  static TextStyle textStyleItemDescriptionTextRegular14(
+    BuildContext context,
+  ) => TextStyle(
     fontSize: 14,
     fontFamily: "Inter",
     fontWeight: FontWeight.w400,
+    color: getColorObject(context).onSurfaceVariant,
   );
-  static const TextStyle textStyleItemTitleSemiBold20 = TextStyle(
-    fontSize: 20,
-    fontFamily: "Inter",
-    fontWeight: FontWeight.w600,
-  );
-  static const TextStyle textStyleItemCostBold20 = TextStyle(
+
+  static TextStyle textStyleItemTitleSemiBold20(BuildContext context) =>
+      TextStyle(
+        fontSize: 20,
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w600,
+        color: getColorObject(context).onSurface,
+      );
+
+  static TextStyle textStyleItemCostBold20(BuildContext context) => TextStyle(
     fontSize: 20,
     fontFamily: "Inter",
     fontWeight: FontWeight.w700,
+    color: getColorObject(context).primary,
   );
-  static const TextStyle textStyleTotaLCheckoutCostBold36 = TextStyle(
-    fontSize: 36,
-    fontFamily: "Inter",
-    fontWeight: FontWeight.w700,
-  );
-  static const TextStyle textStyleLoginSideFontRegular16 = TextStyle(
-    fontSize: 16,
-    fontFamily: "Inter",
-    fontWeight: FontWeight.w400,
-  );
-  static const TextStyle textStyleLabelTextSemiBold12 = TextStyle(
-    fontSize: 12,
-    fontFamily: "Inter",
-    fontWeight: FontWeight.w600,
-  );
-  static const TextStyle textStyleTextFieldTextRegular16 = TextStyle(
-    fontSize: 16,
-    fontFamily: "Inter",
-    fontWeight: FontWeight.w400,
-  );
-  static const TextStyle textButtonMixed14 = TextStyle(
+
+  static TextStyle textStyleTotaLCheckoutCostBold36(BuildContext context) =>
+      TextStyle(
+        fontSize: 36,
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w700,
+        color: getColorObject(context).onSurface,
+      );
+
+  static TextStyle textStyleLoginSideFontRegular16(BuildContext context) =>
+      TextStyle(
+        fontSize: 16,
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w400,
+        color: getColorObject(context).onSurfaceVariant,
+      );
+
+  static TextStyle textStyleLabelTextSemiBold12(BuildContext context) =>
+      TextStyle(
+        fontSize: 12,
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w600,
+        color: getColorObject(context).onSurfaceVariant,
+      );
+
+  static TextStyle textStyleTextFieldTextRegular16(BuildContext context) =>
+      TextStyle(
+        fontSize: 16,
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w400,
+        color: getColorObject(context).onSurface,
+      );
+
+  static TextStyle textButtonMixed14(BuildContext context) => TextStyle(
     fontSize: 14,
     fontFamily: "Inter",
     fontWeight: FontWeight.w500,
+    color: getColorObject(context).primary,
   );
-  static const TextStyle textStyleMaterialButtonSemiBold16 = TextStyle(
-    fontSize: 16,
-    fontFamily: "Inter",
-    fontWeight: FontWeight.w600,
-  );
-  static const TextStyle textGoogleLoginTextMedium14 = TextStyle(
-    fontSize: 14,
-    fontFamily: "Inter",
-    fontWeight: FontWeight.w500,
-  );
+
+  static TextStyle textStyleMaterialButtonSemiBold16(BuildContext context) =>
+      TextStyle(
+        fontSize: 16,
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w600,
+        color: getColorObject(context).surface,
+      );
+
+  static TextStyle textGoogleLoginTextMedium14(BuildContext context) =>
+      TextStyle(
+        fontSize: 14,
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w500,
+        color: getColorObject(context).onSurface,
+      );
 }
