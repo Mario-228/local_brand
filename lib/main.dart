@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:local_brand/core/utils/app_theme/app_theme.dart';
 import 'package:local_brand/features/home_feature/presentation/home_feature_view.dart';
 
 //TODO: create a SettingsHiveBox > to add the current theme to the app
@@ -9,7 +10,6 @@ import 'package:local_brand/features/home_feature/presentation/home_feature_view
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
@@ -17,11 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Local Brand',
       themeMode: ThemeMode.system, // Follows system theme (Light/Dark)
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const HomeFeatureView(),
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+    home: const HomeFeatureView(),
     );
   }
 }
