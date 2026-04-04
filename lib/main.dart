@@ -10,15 +10,14 @@ import 'package:local_brand/features/home_feature/presentation/home_feature_view
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Local Brand',
+      themeMode: ThemeMode.system, // Follows system theme (Light/Dark)
       theme: AppTheme.light,
-      themeMode: ThemeMode.system,
       darkTheme: AppTheme.dark,
     home: const HomeFeatureView(),
     );
