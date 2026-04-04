@@ -2,30 +2,45 @@ import 'package:flutter/material.dart' show Color;
 import 'package:local_brand/core/utils/app_colors/app_colors.dart';
 
 class DarkColors implements AppColors {
+  // Brand
   @override
   Color get primary => const Color(0xff60A5FA);
 
   @override
-  Color get background => const Color(0xff0F172A);
+  Color get primaryContainer => const Color(0xff2563EB);
 
   @override
-  Color get surface => const Color(0xff1E293B);
+  Color get secondary => const Color(0xff94A3B8);
 
   @override
-  Color get textPrimary => const Color(0xffffffff);
+  Color get tertiary => const Color(0xffCBD5F5);
+
+  // Surfaces (Deep layering)
+  @override
+  Color get surface => const Color(0xff0F172A);
 
   @override
-  Color get textSecondary => const Color(0xff94A3B8);
+  Color get surfaceContainerLow => const Color(0xff1E293B);
 
   @override
-  Color get border => const Color(0xff334155);
+  Color get surfaceContainerLowest => const Color(0xff020617);
 
   @override
-  Color get divider => const Color(0xff475569);
+  Color get surfaceContainerHigh => const Color(0xff334155);
+
+  // Text
+  @override
+  Color get onSurface => const Color(0xffE2E8F0);
 
   @override
-  Color get success => const Color(0xff4ADE80);
+  Color get onSurfaceVariant => const Color(0xff94A3B8);
 
+  // Outline (Ghost)
   @override
-  Color get error => const Color(0xffF87171);
+  Color get outlineVariant =>
+      const Color(0xffE2E8F0).withOpacity(0.15);
+
+  // Extra
+  @override
+  Color get surfaceVariant => const Color(0xff1A2236);
 }
