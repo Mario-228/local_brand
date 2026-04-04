@@ -12,9 +12,17 @@ class LoginScreen extends StatelessWidget {
           children: [
             Row(
               children: [
-                Text("logo_placeholder", style: AppFonts.textStyleHeaderBold40),
+                Text(
+                  "logo_placeholder",
+                  style: AppFonts.textStyleHeaderBold40(context),
+                ),
+                Text(
+                  'Digital Atelier',
+                  style: AppFonts.textStyleHeaderBold40(context),
+                ),
               ],
             ),
+            SizedBox(height: 8),
           ],
         ),
       ),
