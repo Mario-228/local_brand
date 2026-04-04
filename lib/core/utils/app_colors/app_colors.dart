@@ -1,16 +1,25 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
+  // Brand
   Color get primary;
-  Color get background;
+  Color get primaryContainer;
+  Color get secondary;
+  Color get tertiary;
+
+  // Surfaces (Layering)
   Color get surface;
+  Color get surfaceContainerLow;
+  Color get surfaceContainerLowest;
+  Color get surfaceContainerHigh;
 
-  Color get textPrimary;
-  Color get textSecondary;
+  // Text
+  Color get onSurface;
+  Color get onSurfaceVariant;
 
-  Color get border;
-  Color get divider;
+  // Outline (Ghost Border)
+  Color get outlineVariant;
 
-  Color get success;
-  Color get error;
+  // Extra
+  Color get surfaceVariant;
 }
