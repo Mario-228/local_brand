@@ -38,7 +38,7 @@ class LightColors implements AppColors {
   // Outline
   @override
   Color get outlineVariant =>
-      const Color(0xff191C1E).withOpacity(0.15);
+      const Color(0xff191C1E).withValues(alpha: 0.12);
 
   // Extra
   @override
