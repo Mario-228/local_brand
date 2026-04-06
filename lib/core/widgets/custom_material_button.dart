@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:local_brand/core/utils/app_theme/app_theme_colors.dart';
 
 class CustomMaterialButton extends StatelessWidget {
   const CustomMaterialButton({
     super.key,
     required this.text,
-    this.onPressed, 
-    this.height =50.0,
+    this.onPressed,
+    this.height = 50.0,
   });
   final String text;
   final void Function()? onPressed;
@@ -15,11 +16,9 @@ class CustomMaterialButton extends StatelessWidget {
     return MaterialButton(
       minWidth: double.infinity,
       onPressed: onPressed,
-      // color: Theme.of(context).buttonTheme.colorScheme!.primary,
+      color: Theme.of(context).extension<AppThemeColors>()!.colors.primary,
       height: height,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(7.0),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(7.0)),
       child: Text(
         text,
         // style: AppFonts.textStyleBold19,
