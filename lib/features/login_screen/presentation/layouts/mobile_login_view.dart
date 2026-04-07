@@ -7,6 +7,13 @@ class MobileLoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SingleChildScrollView(child: LoginScreenHeader()));
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(32, 64, 32, 48),
+          child: Column(children: [LoginScreenHeader()]),
+        ),
+      ),
+    );
   }
 }
