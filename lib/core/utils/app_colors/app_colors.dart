@@ -22,4 +22,7 @@ abstract class AppColors {
 
   // Extra
   Color get surfaceVariant;
+  //Extra
+  Color get backgroundVariantColorMain;
+  Color get backgroundVariantColorSecondary;
 }
