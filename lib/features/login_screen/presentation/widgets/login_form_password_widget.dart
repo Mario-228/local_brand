@@ -32,7 +32,7 @@ class LoginFormPasswordWidget extends StatelessWidget {
           type: TextInputType.visiblePassword,
           labelText: 'Password',
           controller: passwordController,
-          isPassword: true, 
+          isPassword: true,
           validator: '',
         ),
       ],
