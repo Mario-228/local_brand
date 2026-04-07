@@ -14,6 +14,21 @@ abstract class AppFonts {
         fontWeight: FontWeight.w700,
         color: getColorObject(context).primary,
       );
+  static TextStyle textStyleLoginScreenDescriptionRegular16(
+    BuildContext context,
+  ) => TextStyle(
+    fontSize: 16,
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    color: getColorObject(context).secondary,
+  );
+  static TextStyle textStyleTextFieldLabelSemiBold16(BuildContext context) =>
+      TextStyle(
+        fontSize: 16,
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w600,
+        color: getColorObject(context).secondary,
+      );
 
   static TextStyle textStyleHeaderBold40(BuildContext context) => TextStyle(
     fontSize: 40,
@@ -92,11 +107,11 @@ abstract class AppFonts {
         color: getColorObject(context).onSurface,
       );
 
-  static TextStyle textButtonMixed14(BuildContext context) => TextStyle(
-    fontSize: 14,
+  static TextStyle textButtonMixed16(BuildContext context) => TextStyle(
+    fontSize: 16,
     fontFamily: "Inter",
     fontWeight: FontWeight.w500,
-    color: getColorObject(context).primary,
+    color: getColorObject(context).secondary,
   );
 
   static TextStyle textStyleMaterialButtonSemiBold16(BuildContext context) =>
