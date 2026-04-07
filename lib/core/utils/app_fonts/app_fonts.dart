@@ -111,7 +111,7 @@ abstract class AppFonts {
     fontSize: 16,
     fontFamily: "Inter",
     fontWeight: FontWeight.w500,
-    color: getColorObject(context).secondary,
+    color: getColorObject(context).primaryContainer,
   );
 
   static TextStyle textStyleMaterialButtonSemiBold16(BuildContext context) =>
@@ -119,7 +119,7 @@ abstract class AppFonts {
         fontSize: 16,
         fontFamily: "Inter",
         fontWeight: FontWeight.w600,
-        color: getColorObject(context).surface,
+        color: getColorObject(context).primaryContainer,
       );
 
   static TextStyle textGoogleLoginTextMedium14(BuildContext context) =>
