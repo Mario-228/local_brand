@@ -7,31 +7,28 @@ class LoginScreenHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        SizedBox(height: 64),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: Text(
-            "logo_placeholder",
-            style: AppFonts.textStyleLoginScreenHeaderBold32Blue(context),
-          ),
+        Row(
+          children: [
+            Text("logo_placeholder", style: TextStyle(fontSize: 8)),
+            Text(
+              'Digital Atelier',
+              style: AppFonts.textStyleLoginScreenHeaderBold32Blue(context),
+            ),
+          ],
         ),
+
         Text(
-          'Digital Atelier',
-          style: AppFonts.textStyleLoginScreenHeaderBold32Blue(context),
-        ),
-        Text(
-          'Digital Atelier',
+          'Welcome Back',
           style: AppFonts.textStyleLoginScreenHeaderBold32Blue(context),
         ),
         SizedBox(height: 2),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: Text(
-            "Sign in to continue to your creative space.",
-            style: AppFonts.textStyleLoginScreenDescriptionRegular16(context),
-          ),
+        Text(
+          "Sign in to continue to your creative space.",
+          style: AppFonts.textStyleLoginScreenDescriptionRegular16(context),
         ),
+        SizedBox(height: 48),
       ],
     );
   }
