@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:local_brand/core/utils/app_colors/scaffold_color_variant.dart';
 import 'package:local_brand/core/utils/app_theme/app_theme_colors.dart';
 import 'package:local_brand/features/login_screen/presentation/widgets/login_header.dart';
 import 'package:local_brand/features/login_screen/presentation/widgets/login_screen_form.dart';
@@ -13,21 +14,7 @@ class MobileLoginView extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              Theme.of(
-                context,
-              ).extension<AppThemeColors>()!.colors.backgroundVariantColorMain,
-              Theme.of(context)
-                  .extension<AppThemeColors>()!
-                  .colors
-                  .backgroundVariantColorSecondary,
-            ],
-          ),
-        ),
+        decoration: ScaffoldColorVariant.scaffoldVariant(context),
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.fromLTRB(32, 64, 32, 48),
