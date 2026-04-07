@@ -23,7 +23,7 @@ class LoginFormPasswordWidget extends StatelessWidget {
               onPressed: () {},
               child: Text(
                 "forgot Password ? ",
-                style: AppFonts.textButtonMixed16(context),
+                style: AppFonts.textStyleMaterialButtonSemiBold16(context),
               ),
             ),
           ],
@@ -32,7 +32,7 @@ class LoginFormPasswordWidget extends StatelessWidget {
           type: TextInputType.visiblePassword,
           labelText: 'Password',
           controller: passwordController,
-          isPassword: true,
+          isPassword: true, 
           validator: '',
         ),
       ],

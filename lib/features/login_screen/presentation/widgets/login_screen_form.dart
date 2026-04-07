@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:local_brand/core/utils/app_fonts/app_fonts.dart';
 import 'package:local_brand/core/widgets/custom_material_button.dart';
-import 'package:local_brand/features/login_screen/presentation/widgets/lofin_form_password_widget.dart';
+import 'package:local_brand/features/login_screen/presentation/widgets/login_form_password_widget.dart';
 import 'package:local_brand/features/login_screen/presentation/widgets/login_form_email_widget.dart';
 
 class LoginScreenForm extends StatelessWidget {
