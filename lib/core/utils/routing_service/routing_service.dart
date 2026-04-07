@@ -14,7 +14,7 @@ abstract class RoutingService {
       ),
       GoRoute(
         path: kLoginScreen,
-        builder: (context, state) => const LoginScreen(),
+        builder: (context, state) => const LoginView(),
       ),
     ],
   );

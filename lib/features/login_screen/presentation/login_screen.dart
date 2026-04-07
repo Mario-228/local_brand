@@ -4,8 +4,8 @@ import 'package:local_brand/features/login_screen/presentation/widgets/layouts/d
 import 'package:local_brand/features/login_screen/presentation/widgets/layouts/mobile_login_view.dart';
 import 'package:local_brand/features/login_screen/presentation/widgets/layouts/tablet_login_view.dart';
 
-class Login_view extends StatelessWidget {
-  const Login_view({super.key});
+class LoginView extends StatelessWidget {
+  const LoginView({super.key});
 
   @override
   Widget build(BuildContext context) {
