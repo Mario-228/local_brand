@@ -1,13 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:local_brand/core/utils/app_fonts/app_fonts.dart';
 import 'package:local_brand/core/widgets/custom_text_form_field.dart';
 
 class LoginFormEmailWidget extends StatelessWidget {
-  const LoginFormEmailWidget({
-    super.key,
-    required this.emailController,
-  });
+  const LoginFormEmailWidget({super.key, required this.emailController});
 
   final TextEditingController emailController;
 
@@ -22,7 +18,7 @@ class LoginFormEmailWidget extends StatelessWidget {
         ),
         CustomTextFormField(
           type: TextInputType.emailAddress,
-          labelText: 'Email Address',
+          hintText: 'Email Address',
           controller: emailController,
           validator: '',
         ),

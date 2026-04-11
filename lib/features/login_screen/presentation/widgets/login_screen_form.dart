@@ -14,7 +14,7 @@ class LoginScreenForm extends StatelessWidget {
       key: loginFormKey,
       child: Column(
         children: [
-          LoginFormEmailWidget(emailController: emailController),
+          LoginFormEmailWidget(emailController: emailController,),
           const SizedBox(height: 16),
           LoginFormPasswordWidget(passwordController: passwordController),
 

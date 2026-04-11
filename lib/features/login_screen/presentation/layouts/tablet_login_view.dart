@@ -19,7 +19,7 @@ class TabletLoginFeature extends StatelessWidget {
             const Expanded(flex: 3, child: TabletLoginSidebar()),
             const Expanded(
               flex: 4,
-              child: SingleChildScrollView(child: MobileLayout()),
+              child: SingleChildScrollView(child: LoginMobileLayout()),
             ),
           ],
         ),

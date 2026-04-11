@@ -3,8 +3,8 @@ import 'package:local_brand/features/login_screen/presentation/widgets/login_hea
 import 'package:local_brand/features/login_screen/presentation/widgets/login_screen_form.dart';
 import 'package:local_brand/features/login_screen/presentation/widgets/login_screen_login_options.dart';
 
-class MobileLayout extends StatelessWidget {
-  const MobileLayout({super.key});
+class LoginMobileLayout extends StatelessWidget {
+  const LoginMobileLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
