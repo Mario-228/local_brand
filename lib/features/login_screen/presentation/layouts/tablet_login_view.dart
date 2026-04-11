@@ -16,8 +16,11 @@ class TabletLoginFeature extends StatelessWidget {
         decoration: ScaffoldColorVariant.scaffoldVariant(context),
         child: Row(
           children: [
-            const Expanded(child: TabletLoginSidebar()),
-            Expanded(child: SingleChildScrollView(child: MobileLayout())),
+            const Expanded(flex: 3, child: TabletLoginSidebar()),
+            const Expanded(
+              flex: 4,
+              child: SingleChildScrollView(child: MobileLayout()),
+            ),
           ],
         ),
       ),
