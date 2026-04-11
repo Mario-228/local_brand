@@ -1,6 +1,10 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:local_brand/core/utils/responsive_service/break_points.dart';
+
 enum DeviceType { mobile, tablet, desktop }
+
 class ResponsiveService extends StatelessWidget {
   final WidgetBuilder mobile;
   final WidgetBuilder? tablet;
@@ -14,6 +18,7 @@ class ResponsiveService extends StatelessWidget {
   });
 
   static DeviceType getDeviceType(double width) {
+    log(width.toString());
     if (width < BreakPoints.mobile) return DeviceType.mobile;
     if (width < BreakPoints.tablet) return DeviceType.tablet;
     return DeviceType.desktop;
