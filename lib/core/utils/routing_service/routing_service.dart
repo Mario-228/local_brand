@@ -8,10 +8,13 @@ abstract class RoutingService {
 
   static final routes = GoRouter(
     routes: <RouteBase>[
-      GoRoute(path: kHomePage, builder: (context, state) => const LoginView()),
+      GoRoute(
+        path: kHomePage,
+        builder: (context, state) => const HomeFeatureView(),
+      ),
       GoRoute(
         path: kLoginScreen,
-        builder: (context, state) => const HomeFeatureView(),
+        builder: (context, state) => const LoginView(),
       ),
     ],
   );
