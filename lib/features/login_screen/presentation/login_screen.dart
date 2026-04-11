@@ -12,7 +12,6 @@ class LoginView extends StatelessWidget {
     return ResponsiveService(
       mobile: (context) => const MobileLoginView(),
       tablet: (context) => const TabletLoginFeature(),
-      desktop: (context) => const DesktopLoginView(),
     );
   }
 }
