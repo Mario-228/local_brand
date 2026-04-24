@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:local_brand/core/utils/app_fonts/app_fonts.dart';
 
@@ -34,4 +32,3 @@ class LoginOptionsDividerLine extends StatelessWidget {
     );
   }
 }
-
