@@ -37,7 +37,7 @@ class DarkColors implements AppColors {
 
   // Outline (Ghost)
   @override
-  Color get outlineVariant => const Color(0xffE2E8F0).withOpacity(0.15);
+  Color get outlineVariant => const Color(0xffE2E8F0).withValues(alpha: 0.15);
 
   // Extra
   @override
