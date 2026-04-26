@@ -129,4 +129,12 @@ abstract class AppFonts {
         fontWeight: FontWeight.w500,
         color: getColorObject(context).onSurface,
       );
+
+  static TextStyle textStyleTextButtonSemiBold16(BuildContext context) =>
+      TextStyle(
+        fontSize: 16,
+        fontFamily: "Inter",
+        fontWeight: FontWeight.w600,
+        color: getColorObject(context).surface,
+      );
 }
