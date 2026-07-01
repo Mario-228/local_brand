@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:local_brand/core/utils/app_theme/app_theme_colors.dart';
 
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
@@ -31,6 +32,11 @@ class CustomTextFormField extends StatelessWidget {
     obscureText: isPassword,
     keyboardType: type,
     decoration: InputDecoration(
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+      filled: true,
+      fillColor: Theme.of(
+        context,
+      ).extension<AppThemeColors>()!.colors.surfaceVariant,
       border: const OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(6.0)),
       ),
