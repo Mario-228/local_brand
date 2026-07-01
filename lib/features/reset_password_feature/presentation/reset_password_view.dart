@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:local_brand/core/utils/responsive_service/responsive_service.dart';
+import 'package:local_brand/core/widgets/custom_appbar.dart';
 import 'package:local_brand/features/reset_password_feature/presentation/layouts/mobile_reset_view.dart';
 
 class ResetPasswordView extends StatelessWidget {
@@ -7,6 +8,9 @@ class ResetPasswordView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveService(mobile: (context) => const MobileResetView());
+    return Scaffold(
+      appBar: CustomAppbar(title: 'Reset Password'),
+      body: ResponsiveService(mobile: (context) => const MobileResetView()),
+    );
   }
 }
